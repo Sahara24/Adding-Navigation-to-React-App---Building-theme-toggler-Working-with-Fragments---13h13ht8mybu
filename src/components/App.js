@@ -11,22 +11,26 @@ class App extends Component {
     render() {
 
         return (
-            <Router>
-                <div id="main">
-                    {/* Do not remove the main div */}
-                    <ul>
-                        <li><Link to={'/'}>Home</Link></li>
-                        <li><Link to={'/about'}>About</Link></li>
-                    </ul>
-                    <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route path='/about' component={About} />
-                        <Route path='*' component={NoMatch} />
-                    </Switch>
+            <>
 
-                </div>
-                <LocationDisplay />
-            </Router>
+                <Router>
+                    <div id="main">
+                        {/* Do not remove the main div */}
+                        <ul>
+                            <li><Link to={'/'}>Home</Link></li>
+                            <li><Link to={'/about'}>About</Link></li>
+                        </ul>
+                        <Switch>
+                            <Route exact path="/" component={Home} />
+                            <Route path='/about' component={About} />
+                            <Route path='*' component={NoMatch} />
+                        </Switch>
+                        <LocationDisplay />
+                    </div>
+
+                </Router>
+
+            </>
         )
     }
 }

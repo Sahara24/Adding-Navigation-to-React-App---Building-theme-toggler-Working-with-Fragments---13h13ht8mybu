@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-export const LocationDisplay = () => {
+const LocationDisplay = () => {
   const location = useLocation();
   // console.log(location);
   return (
@@ -10,3 +10,4 @@ export const LocationDisplay = () => {
     </>
   )
 }
+export default LocationDisplay;

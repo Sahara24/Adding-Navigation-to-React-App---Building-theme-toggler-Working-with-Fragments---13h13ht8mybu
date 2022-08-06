@@ -6,7 +6,7 @@ export const LocationDisplay = () => {
   // console.log(location);
   return (
     <>
-      <div data-testid="location-display">{location.pathname}</div>
+      <h4 data-testid="location-display">{location.pathname}</h4>
     </>
   )
 }
